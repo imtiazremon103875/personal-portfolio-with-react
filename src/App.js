@@ -5,10 +5,12 @@ import Intro from './Component/Intro';
 import Banner from './Component/Banner';
 import Support from './Component/Support';
 import Contact from './Component/Contact';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Projects from './Component/Projects';
 import Footer from './Component/Footer';
+import Myskill from './Component/Myskill';
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
       <Intro></Intro>
       <Projects></Projects>
       <Support></Support>
+      <Myskill></Myskill>
 
       <Contact></Contact>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

@@ -10,7 +10,7 @@ const Header = () => {
 
     </>
     return (
-        <div className="  navbar  text-white">
+        <div className="  navbar bg-primary  text-white">
             <div className="navbar-start ">
                 <div className="dropdown">
                     <label tabIndex="1" className="btn btn-ghost lg:hidden">
