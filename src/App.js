@@ -1,29 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './Component/Header';
-import Intro from './Component/Intro';
-import Banner from './Component/Banner';
-import Support from './Component/Support';
-import Contact from './Component/Contact';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { Route, Routes } from 'react-router-dom';
+import Home from './Component/Home';
+import Blogs from './Component/Blogs';
 import Projects from './Component/Projects';
-import Footer from './Component/Footer';
-import Myskill from './Component/Myskill';
+import ProjectsDetails from './Component/ProjectsDetails';
+
 
 function App() {
   return (
     <div className="bg-dark">
       <Header></Header>
-      <Banner></Banner>
-      <Intro></Intro>
-      <Projects></Projects>
-      <Support></Support>
-      <Myskill></Myskill>
 
-      <Contact></Contact>
-      <Footer></Footer>
+      <Routes>
+
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blog' element={<Blogs></Blogs>}></Route>
+        <Route path='/details/:id' element={<ProjectsDetails></ProjectsDetails>}></Route>
+      </Routes>
+
+
       <ToastContainer></ToastContainer>
     </div>
   );

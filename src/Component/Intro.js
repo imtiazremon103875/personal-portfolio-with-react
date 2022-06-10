@@ -3,7 +3,7 @@ import pic from "../../src/image/imtiazremon.png"
 
 const Intro = () => {
     return (
-        <div>
+        <div id='about'>
             <h2 className='text-2xl font-bold text-center my-8 text-white'>About Me</h2>
             <div class="hero min-h-screen bg-base-200">
                 <div class="hero-content flex-col lg:flex-row-reverse">

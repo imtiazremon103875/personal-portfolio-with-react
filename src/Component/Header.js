@@ -4,13 +4,17 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     const menuItem = <>
-        <li><a href="#projects">Projects</a></li>
+        <li><Link to="/home">Home</Link></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#skill">Skill</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><Link to="/blog">Blogs</Link></li>
 
     </>
     return (
-        <div className="  navbar bg-primary  text-white">
+        <div className="  navbar bg-primary   text-white">
             <div className="navbar-start ">
                 <div className="dropdown">
                     <label tabIndex="1" className="btn btn-ghost lg:hidden">

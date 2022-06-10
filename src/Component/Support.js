@@ -35,7 +35,7 @@ const Support = () => {
 
     ]
     return (
-        <div id='skill' className='px-6 my-8'>
+        <div id='support' className='px-6 my-8'>
             <h2 className='text-3xl text-center text-white'>Why You Should Hire me?</h2>
             <p className='text-center text-xl text-primary'>BECAUSE I AM TRY TO CARE AND TRY TO PROVIDE BEST SERVICE</p>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-6 p-6'>
